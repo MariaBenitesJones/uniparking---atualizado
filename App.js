@@ -5,7 +5,6 @@ import { View, Text, TextInput, Alert, StyleSheet, ScrollView, KeyboardAvoidingV
 import { useState, useEffect } from 'react';
 import ListaCarrosScreen from './ListaCarrosScreen';
 import FormCarroScreen from './FormCarroScreen';
-import TesteStorage from './TesteStorage';
 import TimerScreen from './TimerScreen';
 import HistoricoScreen from './HistoricoScreen';
 
@@ -152,7 +151,6 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Teste" component={TesteStorage} />
         <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Entrar' }} />
         <Stack.Screen name="Cadastro" component={CadastroScreen} options={{ title: 'Criar Conta', headerLeft: null, gestureEnabled: false }} />
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Menu Principal', headerLeft: null, gestureEnabled: false }} />
